@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Mx" name="net.sourceforge.tess4j.TesseractTest" skipped="0" tests="10" time="7.636" timestamp="2016-02-15T13:50:17">
+  <properties>
+    <property name="default.javac.source" value="1.4" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="jnlp.signing.alias" value="" />
+    <property name="file.reference.logback-core-1.1.3.jar" value="lib\logback-core-1.1.3.jar" />
+    <property name="javac.source" value="1.7" />
+    <property name="testng.debug.mode" value="" />
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_73" />
+    <property name="file.reference.logback-classic-1.1.3.jar" value="lib\logback-classic-1.1.3.jar" />
+    <property name="test.src.dir" value="test" />
+    <property name="javadoc.version" value="false" />
+    <property name="jnlp.mixed.code" value="default" />
+    <property name="libraries.path" value="C:\Users\Baydar\workspace\Tess\lib\nblibraries.properties" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_73\lib\endorsed" />
+    <property name="src.dir" value="src" />
+    <property name="debug-args-line" value="-Xdebug" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="have.sources" value="true" />
+    <property name="includes" value="**" />
+    <property name="javac.fork" value="false" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.version" value="1.8.0_73" />
+    <property name="build.generated.subdirs" value="" />
+    <property name="javac.debug" value="false" />
+    <property name="application.desc" value="A Java wrapper for Tesseract OCR API" />
+    <property name="run.classpath" value="lib/jai_imageio.jar:lib/commons-io-2.4.jar:lib/jna.jar:lib/ghost4j-1.0.0.jar:lib/lept4j-1.0.1.jar:lib/rococoa-core-0.5.jar:lib\logback-core-1.1.3.jar:lib/slf4j-api-1.7.13.jar:lib\logback-classic-1.1.3.jar:lib/log4j-1.2.17.jar:lib/itext-2.1.7.jar:lib/commons-beanutils-1.9.2.jar:lib/commons-logging-1.2.jar:lib/jul-to-slf4j-1.7.13.jar:build/classes" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="ant.project.invoked-targets" value="default" />
+    <property name="annotation.processing.run.all.processors" value="true" />
+    <property name="user.name" value="Baydar" />
+    <property name="jnlp.enabled" value="false" />
+    <property name="empty.dir" value="C:\Users\Baydar\workspace\Tess\build\empty" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="application.vendor" value="Quan Nguyen" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="javadoc.author" value="false" />
+    <property name="ap.proc.none.internal" value="" />
+    <property name="user.timezone" value="" />
+    <property name="user.script" value="" />
+    <property name="path.separator" value=";" />
+    <property name="testng.mode" value="testng" />
+    <property name="version-output" value="java version &quot;1.8" />
+    <property name="jnlp.signing" value="" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="javac.profile.cmd.line.arg" value="" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner net.sourceforge.tess4j.TesseractTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Baydar\workspace\Tess\build\test\results\TEST-net.sourceforge.tess4j.TesseractTest.xml crashfile=C:\Users\Baydar\workspace\Tess\build\junitvmwatcher6944707057041543570.properties propsfile=C:\Users\Baydar\workspace\Tess\build\junit2233726996574454416.properties" />
+    <property name="built-jar.properties" value="C:\Users\Baydar\workspace\Tess\build\built-jar.properties" />
+    <property name="ant.file" value="C:\Users\Baydar\workspace\Tess\build.xml" />
+    <property name="junit.available" value="true" />
+    <property name="do.jar" value="true" />
+    <property name="java.io.tmpdir" value="C:\Users\Baydar\AppData\Local\Temp\" />
+    <property name="build.test.results.dir" value="build/test/results" />
+    <property name="user.language" value="tr" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="libs.junit_4.displayName" value="JUnit 4.12" />
+    <property name="javac.compilerargs" value="" />
+    <property name="file.reference.jai_imageio.jar" value="lib/jai_imageio.jar" />
+    <property name="jar.compress" value="false" />
+    <property name="debug-transport-by-os" value="dt_shmem" />
+    <property name="ant.file.Tess4J-impl" value="C:\Users\Baydar\workspace\Tess\nbproject\build-impl.xml" />
+    <property name="do.depend.true" value="true" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="javadoc.private" value="false" />
+    <property name="annotation.processing.processors.list" value="" />
+    <property name="sun.desktop" value="windows" />
+    <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="version" value="3.0" />
+    <property name="ant.file.type.Tess4J-impl" value="file" />
+    <property name="test.binaryexcludes" value="" />
+    <property name="file.reference.log4j-1.2.17.jar" value="lib/log4j-1.2.17.jar" />
+    <property name="platform.active" value="default_platform" />
+    <property name="ap.cmd.line.internal" value="" />
+    <property name="jdkBug6558476" value="false" />
+    <property name="java.failonerror" value="true" />
+    <property name="endorsed.classpath" value="" />
+    <property name="javadoc.encoding" value="UTF-8" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="ap.processors.internal" value="" />
+    <property name="do.archive" value="true" />
+    <property name="dist.jar" value="dist/tess4j-3.0.jar" />
+    <property name="meta.inf.dir" value="src/META-INF" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="ant.file.Tess4J" value="C:\Users\Baydar\workspace\Tess\build.xml" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="user.properties.file" value="C:\Users\Quan\AppData\Roaming\NetBeans\8.1\build.properties" />
+    <property name="javac.external.vm" value="false" />
+    <property name="file.reference.rococoa-core-0.5.jar" value="lib/rococoa-core-0.5.jar" />
+    <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="os.name" value="Windows 8.1" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="run.test.classpath" value="lib/jai_imageio.jar:lib/commons-io-2.4.jar:lib/jna.jar:lib/ghost4j-1.0.0.jar:lib/lept4j-1.0.1.jar:lib/rococoa-core-0.5.jar:lib\logback-core-1.1.3.jar:lib/slf4j-api-1.7.13.jar:lib\logback-classic-1.1.3.jar:lib/log4j-1.2.17.jar:lib/itext-2.1.7.jar:lib/commons-beanutils-1.9.2.jar:lib/commons-logging-1.2.jar:lib/jul-to-slf4j-1.7.13.jar:build/classes:C:/Users/Baydar/workspace/Tess/lib/junit-4.12.jar:C:/Users/Baydar/workspace/Tess/lib/hamcrest-core-1.3.jar:build/test/classes" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="ant.file.type.Tess4J" value="file" />
+    <property name="ap.supported.internal" value="true" />
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_65\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\Java\jre1.8.0_71\bin;C:\eclipse;;." />
+    <property name="ant.java.version" value="1.8" />
+    <property name="basedir" value="C:\Users\Baydar\workspace\Tess" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="java.class.version" value="52.0" />
+    <property name="javac.test.classpath" value="lib/jai_imageio.jar:lib/commons-io-2.4.jar:lib/jna.jar:lib/ghost4j-1.0.0.jar:lib/lept4j-1.0.1.jar:lib/rococoa-core-0.5.jar:lib\logback-core-1.1.3.jar:lib/slf4j-api-1.7.13.jar:lib\logback-classic-1.1.3.jar:lib/log4j-1.2.17.jar:lib/itext-2.1.7.jar:lib/commons-beanutils-1.9.2.jar:lib/commons-logging-1.2.jar:lib/jul-to-slf4j-1.7.13.jar:build/classes:C:/Users/Baydar/workspace/Tess/lib/junit-4.12.jar:C:/Users/Baydar/workspace/Tess/lib/hamcrest-core-1.3.jar" />
+    <property name="javac.processorpath" value="lib/jai_imageio.jar:lib/commons-io-2.4.jar:lib/jna.jar:lib/ghost4j-1.0.0.jar:lib/lept4j-1.0.1.jar:lib/rococoa-core-0.5.jar:lib\logback-core-1.1.3.jar:lib/slf4j-api-1.7.13.jar:lib\logback-classic-1.1.3.jar:lib/log4j-1.2.17.jar:lib/itext-2.1.7.jar:lib/commons-beanutils-1.9.2.jar:lib/commons-logging-1.2.jar:lib/jul-to-slf4j-1.7.13.jar" />
+    <property name="ant.home" value="C:\eclipse\plugins\org.apache.ant_1.9.4.v201504302020" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="javac.test.processorpath" value="lib/jai_imageio.jar:lib/commons-io-2.4.jar:lib/jna.jar:lib/ghost4j-1.0.0.jar:lib/lept4j-1.0.1.jar:lib/rococoa-core-0.5.jar:lib\logback-core-1.1.3.jar:lib/slf4j-api-1.7.13.jar:lib\logback-classic-1.1.3.jar:lib/log4j-1.2.17.jar:lib/itext-2.1.7.jar:lib/commons-beanutils-1.9.2.jar:lib/commons-logging-1.2.jar:lib/jul-to-slf4j-1.7.13.jar:build/classes:C:/Users/Baydar/workspace/Tess/lib/junit-4.12.jar:C:/Users/Baydar/workspace/Tess/lib/hamcrest-core-1.3.jar" />
+    <property name="javadoc.preview" value="true" />
+    <property name="copylibs.rebase" value="true" />
+    <property name="jnlp.signing.keystore" value="" />
+    <property name="junit.forkmode" value="perTest" />
+    <property name="test.binarytestincludes" value="" />
+    <property name="libs.junit_4.classpath" value="C:/Users/Baydar/workspace/Tess/lib/junit-4.12.jar" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_73\bin" />
+    <property name="build.dir" value="build" />
+    <property name="application.title" value="Tess4J" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="user.variant" value="" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="libraries.dir.nativedirsep" value="C:\Users\Baydar\workspace\Tess\lib" />
+    <property name="javadoc.windowtitle" value="Tess4J API" />
+    <property name="libs.hamcrest.classpath" value="C:/Users/Baydar/workspace/Tess/lib/hamcrest-core-1.3.jar" />
+    <property name="run.jvmargs.ide" value="" />
+    <property name="annotation.processing.enabled" value="true" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="nb.junit.single" value="false" />
+    <property name="run.jvmargs" value="" />
+    <property name="ant.project.name" value="Tess4J" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="file.reference.commons-beanutils-1.9.2.jar" value="lib/commons-beanutils-1.9.2.jar" />
+    <property name="work.dir" value="C:\Users\Baydar\workspace\Tess" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="javadoc.use" value="true" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="file.reference.slf4j-api-1.7.13.jar" value="lib/slf4j-api-1.7.13.jar" />
+    <property name="file.reference.commons-logging-1.2.jar" value="lib/commons-logging-1.2.jar" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_73\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="os.version" value="6.3" />
+    <property name="excludes" value="" />
+    <property name="jnlp.descriptor" value="application" />
+    <property name="user.home" value="C:\Users\Baydar" />
+    <property name="libraries.basename" value="nblibraries" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="file.reference.itext-2.1.7.jar" value="lib/itext-2.1.7.jar" />
+    <property name="user.dir" value="C:\Users\Baydar\workspace\Tess" />
+    <property name="file.reference.jul-to-slf4j-1.7.13.jar" value="lib/jul-to-slf4j-1.7.13.jar" />
+    <property name="debug-transport" value="dt_shmem" />
+    <property name="application.args" value="" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="compile.on.save" value="true" />
+    <property name="endorsed.classpath.cmd.line.arg" value="" />
+    <property name="jar.index" value="false" />
+    <property name="jnlp.offline-allowed" value="false" />
+    <property name="libraries.dir" value="C:/Users/Baydar/workspace/Tess/lib" />
+    <property name="java.vm.version" value="25.73-b02" />
+    <property name="libs.hamcrest.displayName" value="Hamcrest 1.3" />
+    <property name="test.binaryincludes" value="&lt;nothing&gt;" />
+    <property name="java.class.path" value="C:\Users\Baydar\workspace\Tess\lib\jai_imageio.jar;C:\Users\Baydar\workspace\Tess\lib\commons-io-2.4.jar;C:\Users\Baydar\workspace\Tess\lib\jna.jar;C:\Users\Baydar\workspace\Tess\lib\ghost4j-1.0.0.jar;C:\Users\Baydar\workspace\Tess\lib\lept4j-1.0.1.jar;C:\Users\Baydar\workspace\Tess\lib\rococoa-core-0.5.jar;C:\Users\Baydar\workspace\Tess\lib\logback-core-1.1.3.jar;C:\Users\Baydar\workspace\Tess\lib\slf4j-api-1.7.13.jar;C:\Users\Baydar\workspace\Tess\lib\logback-classic-1.1.3.jar;C:\Users\Baydar\workspace\Tess\lib\log4j-1.2.17.jar;C:\Users\Baydar\workspace\Tess\lib\itext-2.1.7.jar;C:\Users\Baydar\workspace\Tess\lib\commons-beanutils-1.9.2.jar;C:\Users\Baydar\workspace\Tess\lib\commons-logging-1.2.jar;C:\Users\Baydar\workspace\Tess\lib\jul-to-slf4j-1.7.13.jar;C:\Users\Baydar\workspace\Tess\build\classes;C:\Users\Baydar\workspace\Tess\lib\junit-4.12.jar;C:\Users\Baydar\workspace\Tess\lib\hamcrest-core-1.3.jar;C:\Users\Baydar\workspace\Tess\build\test\classes;C:\Users\Baydar\workspace\Tess;C:\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-launcher.jar;C:\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant.jar;C:\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-junit.jar;C:\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-junit4.jar" />
+    <property name="annotation.processing.processor.options" value="" />
+    <property name="file.reference.ghost4j-1.0.0.jar" value="lib/ghost4j-1.0.0.jar" />
+    <property name="ant.library.dir" value="C:\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib" />
+    <property name="os.arch" value="amd64" />
+    <property name="javac.deprecation" value="true" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="dist.dir" value="dist" />
+    <property name="debug.classpath" value="lib/jai_imageio.jar:lib/commons-io-2.4.jar:lib/jna.jar:lib/ghost4j-1.0.0.jar:lib/lept4j-1.0.1.jar:lib/rococoa-core-0.5.jar:lib\logback-core-1.1.3.jar:lib/slf4j-api-1.7.13.jar:lib\logback-classic-1.1.3.jar:lib/log4j-1.2.17.jar:lib/itext-2.1.7.jar:lib/commons-beanutils-1.9.2.jar:lib/commons-logging-1.2.jar:lib/jul-to-slf4j-1.7.13.jar:build/classes" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="jar.index.metainf" value="false" />
+    <property name="jnlp.codebase.type" value="no.codebase" />
+    <property name="platform.java" value="C:\Program Files\Java\jre1.8.0_73/bin/java" />
+    <property name="annotation.processing.enabled.in.editor" value="false" />
+    <property name="ant.core.lib" value="C:\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant.jar" />
+    <property name="jnlp.signed" value="false" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="do.depend" value="true" />
+    <property name="file.separator" value="\" />
+    <property name="java.runtime.version" value="1.8.0_73-b02" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_73\lib\resources.jar;C:\Program Files\Java\jre1.8.0_73\lib\rt.jar;C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_73\lib\jce.jar;C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_73\classes" />
+    <property name="debug.test.classpath" value="lib/jai_imageio.jar:lib/commons-io-2.4.jar:lib/jna.jar:lib/ghost4j-1.0.0.jar:lib/lept4j-1.0.1.jar:lib/rococoa-core-0.5.jar:lib\logback-core-1.1.3.jar:lib/slf4j-api-1.7.13.jar:lib\logback-classic-1.1.3.jar:lib/log4j-1.2.17.jar:lib/itext-2.1.7.jar:lib/commons-beanutils-1.9.2.jar:lib/commons-logging-1.2.jar:lib/jul-to-slf4j-1.7.13.jar:build/classes:C:/Users/Baydar/workspace/Tess/lib/junit-4.12.jar:C:/Users/Baydar/workspace/Tess/lib/hamcrest-core-1.3.jar:build/test/classes" />
+    <property name="nb.junit.batch" value="true" />
+    <property name="have.tests" value="true" />
+    <property name="jar.archive.disabled" value="false" />
+    <property name="libs.junit_4.prop-maven-dependencies" value="junit:junit:4.12:jar" />
+    <property name="file.reference.jna.jar" value="lib/jna.jar" />
+    <property name="file.reference.lept4j-1.0.1.jar" value="lib/lept4j-1.0.1.jar" />
+    <property name="user.country" value="TR" />
+    <property name="javadoc.notree" value="false" />
+    <property name="application.homepage" value="http://tess4j.sf.net" />
+    <property name="file.reference.commons-io-2.4.jar" value="lib/commons-io-2.4.jar" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="javac.classpath" value="lib/jai_imageio.jar:lib/commons-io-2.4.jar:lib/jna.jar:lib/ghost4j-1.0.0.jar:lib/lept4j-1.0.1.jar:lib/rococoa-core-0.5.jar:lib\logback-core-1.1.3.jar:lib/slf4j-api-1.7.13.jar:lib\logback-classic-1.1.3.jar:lib/log4j-1.2.17.jar:lib/itext-2.1.7.jar:lib/commons-beanutils-1.9.2.jar:lib/commons-logging-1.2.jar:lib/jul-to-slf4j-1.7.13.jar" />
+    <property name="default.javac.target" value="1.4" />
+    <property name="build.classes.dir" value="build/classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="javac.target" value="1.7" />
+    <property name="runtime.encoding" value="UTF-8" />
+    <property name="libs.hamcrest.prop-maven-dependencies" value="org.hamcrest:hamcrest-core:1.3:jar" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="mkdist.disabled" value="false" />
+  </properties>
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testDoOCR_File_With_Configs" time="1.961" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testDoOCR_SkewedImage" time="0.894" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testGetWords" time="0.551" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testDoOCR_File_Rectangle" time="0.601" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testDoOCR_BufferedImage" time="0.492" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testCreateDocuments" time="1.007" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testDoOCR_UNLV_Zone_File" time="0.19" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testGetSegmentedRegions" time="0.816" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testDoOCR_PDF" time="0.583" />
+  <testcase classname="net.sourceforge.tess4j.TesseractTest" name="testDoOCR_File" time="0.513" />
+  <system-out><![CDATA[15:50:17.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - doOCR with configs
+15:50:19.382 [main] INFO  net.sourceforge.tess4j.TesseractTest - 1116 0211111210 1111011111 11011 1111111151
+01161 1116 141456.78 513239 11190 1103
+81 1111611300561 35 12.504 01 15-111311
+110111 35031111116106.131160511630111 15 5113111.
+1361 1561111611611 131311116 117116115 51311381
+111161 1211311 13111611 11111111. 1.6 16113111 1311111
+11131211111311 531116 1331-0655115 16 6111611
+03165561111. 1.3 110106 1113110116 13111113
+53113 50013 11 63116 111310. 131 20110
+111311011 131131110 53113 501316 61 116110
+06162050. 18 130053 1113110111 13111113
+53113 501116 0 6510 01661116050.
+
+
+15:50:19.384 [main] INFO  net.sourceforge.tess4j.TesseractTest - doOCR on a skewed PNG image
+15:50:20.277 [main] INFO  net.sourceforge.tess4j.TesseractTest - The (quick) [brown] {fox} jumps!
+Over the $43,456.78 <lazy> #90 dog
+& duck/goose. as 12.5% of E-mail
+from aspammer@website.com is spam.
+Der ,.schnelle” braune Fuchs springt
+?ber den faulen Hund. Le renard brun
+«rapide» saute par-dessus le chien
+paresseux. La volpe marrone rapida
+salta sopra i] cane pigro. El zorro
+marrén répido salta sobre el perro
+perezoso. A raposa marrom répida
+salta sobre o c?o preguicoso.
+
+
+15:50:20.278 [main] INFO  net.sourceforge.tess4j.TesseractTest - getWords
+15:50:20.279 [main] INFO  net.sourceforge.tess4j.TesseractTest - PageIteratorLevel: RIL_WORD
+15:50:20.758 [main] INFO  net.sourceforge.tess4j.TesseractTest - The [Confidence: 90,493225 Bounding box: 105 66 73 31]
+15:50:20.758 [main] INFO  net.sourceforge.tess4j.TesseractTest - (quick) [Confidence: 87,137253 Bounding box: 205 67 142 39]
+15:50:20.759 [main] INFO  net.sourceforge.tess4j.TesseractTest - [brown] [Confidence: 89,419556 Bounding box: 376 69 152 40]
+15:50:20.759 [main] INFO  net.sourceforge.tess4j.TesseractTest - {fox} [Confidence: 89,932770 Bounding box: 559 71 104 39]
+15:50:20.759 [main] INFO  net.sourceforge.tess4j.TesseractTest - jumps! [Confidence: 89,357109 Bounding box: 687 73 136 40]
+15:50:20.759 [main] INFO  net.sourceforge.tess4j.TesseractTest - Over [Confidence: 91,762779 Bounding box: 104 115 95 32]
+15:50:20.759 [main] INFO  net.sourceforge.tess4j.TesseractTest - the [Confidence: 89,958458 Bounding box: 224 117 59 31]
+15:50:20.759 [main] INFO  net.sourceforge.tess4j.TesseractTest - $43,456.78 [Confidence: 88,324371 Bounding box: 310 117 223 38]
+15:50:20.759 [main] INFO  net.sourceforge.tess4j.TesseractTest - <lazy> [Confidence: 92,761353 Bounding box: 561 121 135 41]
+15:50:20.759 [main] INFO  net.sourceforge.tess4j.TesseractTest - #90 [Confidence: 92,212357 Bounding box: 722 123 69 31]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - dog [Confidence: 89,430351 Bounding box: 818 125 69 40]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - & [Confidence: 91,045258 Bounding box: 103 165 31 31]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - duck/goose, [Confidence: 88,793205 Bounding box: 160 166 236 40]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - as [Confidence: 92,730377 Bounding box: 424 178 39 23]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - 12.5% [Confidence: 91,613304 Bounding box: 493 171 121 32]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - of [Confidence: 89,453125 Bounding box: 638 172 42 32]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - E-mail [Confidence: 91,035393 Bounding box: 700 174 135 32]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - from [Confidence: 89,337387 Bounding box: 103 215 91 32]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - aspammer@website.com [Confidence: 87,221786 Bounding box: 220 219 496 41]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - is [Confidence: 93,238312 Bounding box: 742 223 31 32]
+15:50:20.760 [main] INFO  net.sourceforge.tess4j.TesseractTest - spam. [Confidence: 88,838593 Bounding box: 799 233 112 31]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - Der [Confidence: 89,992561 Bounding box: 102 266 71 31]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - ,,schnelle” [Confidence: 78,853043 Bounding box: 198 267 208 35]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - braune [Confidence: 91,464859 Bounding box: 433 269 135 33]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - Fuchs [Confidence: 91,183701 Bounding box: 594 272 115 32]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - springt [Confidence: 83,845734 Bounding box: 735 274 142 40]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - ?ber [Confidence: 75,940933 Bounding box: 102 315 85 32]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - den [Confidence: 91,022781 Bounding box: 212 317 68 31]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - faulen [Confidence: 86,817657 Bounding box: 306 318 124 32]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - Hund. [Confidence: 92,351196 Bounding box: 456 320 116 32]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - Le [Confidence: 87,862000 Bounding box: 601 322 47 32]
+15:50:20.761 [main] INFO  net.sourceforge.tess4j.TesseractTest - renard [Confidence: 87,811989 Bounding box: 674 324 129 32]
+15:50:20.762 [main] INFO  net.sourceforge.tess4j.TesseractTest - brun [Confidence: 90,922226 Bounding box: 827 325 91 32]
+15:50:20.762 [main] INFO  net.sourceforge.tess4j.TesseractTest - «rapide» [Confidence: 88,684082 Bounding box: 101 366 173 39]
+15:50:20.825 [main] INFO  net.sourceforge.tess4j.TesseractTest - saute [Confidence: 88,732910 Bounding box: 302 373 101 27]
+15:50:20.825 [main] INFO  net.sourceforge.tess4j.TesseractTest - par-dessus [Confidence: 87,191460 Bounding box: 428 371 213 38]
+15:50:20.825 [main] INFO  net.sourceforge.tess4j.TesseractTest - le [Confidence: 91,223145 Bounding box: 667 372 33 32]
+15:50:20.825 [main] INFO  net.sourceforge.tess4j.TesseractTest - chien [Confidence: 90,686035 Bounding box: 725 374 108 32]
+15:50:20.825 [main] INFO  net.sourceforge.tess4j.TesseractTest - paresseux. [Confidence: 89,915848 Bounding box: 100 424 208 30]
+15:50:20.825 [main] INFO  net.sourceforge.tess4j.TesseractTest - La [Confidence: 90,142822 Bounding box: 337 419 47 31]
+15:50:20.825 [main] INFO  net.sourceforge.tess4j.TesseractTest - volpe [Confidence: 90,512085 Bounding box: 409 420 107 39]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - marrone [Confidence: 89,822189 Bounding box: 543 430 164 25]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - rapida [Confidence: 85,991074 Bounding box: 733 424 126 40]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - salta [Confidence: 90,310249 Bounding box: 100 466 92 31]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - sopra [Confidence: 90,344147 Bounding box: 219 475 105 32]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - i] [Confidence: 90,222000 Bounding box: 351 468 25 31]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - cane [Confidence: 90,802002 Bounding box: 403 478 88 23]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - pigro. [Confidence: 89,406044 Bounding box: 517 471 116 40]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - El [Confidence: 96,022232 Bounding box: 662 473 41 31]
+15:50:20.826 [main] INFO  net.sourceforge.tess4j.TesseractTest - zorro [Confidence: 88,816833 Bounding box: 729 482 105 24]
+15:50:20.827 [main] INFO  net.sourceforge.tess4j.TesseractTest - marrén [Confidence: 79,192062 Bounding box: 99 516 143 32]
+15:50:20.827 [main] INFO  net.sourceforge.tess4j.TesseractTest - répido [Confidence: 76,837868 Bounding box: 268 517 127 40]
+15:50:20.827 [main] INFO  net.sourceforge.tess4j.TesseractTest - salta [Confidence: 90,545914 Bounding box: 421 520 92 32]
+15:50:20.827 [main] INFO  net.sourceforge.tess4j.TesseractTest - sobre [Confidence: 93,646240 Bounding box: 540 521 104 33]
+15:50:20.827 [main] INFO  net.sourceforge.tess4j.TesseractTest - el [Confidence: 91,275024 Bounding box: 669 523 33 31]
+15:50:20.827 [main] INFO  net.sourceforge.tess4j.TesseractTest - perro [Confidence: 88,137817 Bounding box: 728 532 105 31]
+15:50:20.827 [main] INFO  net.sourceforge.tess4j.TesseractTest - perezoso. [Confidence: 89,299171 Bounding box: 98 574 186 30]
+15:50:20.827 [main] INFO  net.sourceforge.tess4j.TesseractTest - A [Confidence: 92,230225 Bounding box: 313 568 29 30]
+15:50:20.828 [main] INFO  net.sourceforge.tess4j.TesseractTest - raposa [Confidence: 91,488297 Bounding box: 369 578 128 31]
+15:50:20.828 [main] INFO  net.sourceforge.tess4j.TesseractTest - marrom [Confidence: 89,250183 Bounding box: 523 579 154 25]
+15:50:20.828 [main] INFO  net.sourceforge.tess4j.TesseractTest - répida [Confidence: 75,128006 Bounding box: 703 573 126 40]
+15:50:20.828 [main] INFO  net.sourceforge.tess4j.TesseractTest - salta [Confidence: 86,054291 Bounding box: 98 616 92 31]
+15:50:20.828 [main] INFO  net.sourceforge.tess4j.TesseractTest - sobre [Confidence: 90,234375 Bounding box: 217 617 103 32]
+15:50:20.828 [main] INFO  net.sourceforge.tess4j.TesseractTest - 0 [Confidence: 89,358742 Bounding box: 346 627 20 23]
+15:50:20.828 [main] INFO  net.sourceforge.tess4j.TesseractTest - C50 [Confidence: 72,610985 Bounding box: 391 621 65 30]
+15:50:20.828 [main] INFO  net.sourceforge.tess4j.TesseractTest - preguieoso. [Confidence: 74,688721 Bounding box: 481 621 229 40]
+15:50:20.830 [main] INFO  net.sourceforge.tess4j.TesseractTest - doOCR on a BMP image with bounding rectangle
+15:50:21.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - The (quick) [brown] {fox} jumps!
+Over the $43,456.78 <lazy> #90 dog
+& duck/goose, as 12.5% of E-mail
+from aspammer@website.com is spam.
+Der ,,schnelle” braune Fuchs springt
+?ber den faulen Hund. Le renard brun
+«rapide» saute par-dessus le chien
+paresseux. La volpe marrone rapida
+salta sopra i] cane pigro. El zorro
+marrén répido salta sobre el perro
+perezoso. A raposa marrom répida
+salta sobre 0 C50 preguieoso.
+
+
+15:50:21.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - doOCR on a buffered image of a PNG
+15:50:21.923 [main] INFO  net.sourceforge.tess4j.TesseractTest - The (quick) [brown] {fox} jumps!
+Over the $43,456.78 <lazy> #90 dog
+& duck/goose, as 12.5% of E-mail
+from aspammer@website.com is spam.
+Der ,,schnelle” braune Fuchs springt
+?ber den faulen Hund. Le renard brun
+«rapide» saute par-dessus le chien
+paresseux. La volpe marrone rapida
+salta sopra i] cane pigro. El zorro
+marrén répido salta sobre el perro
+perezoso. A raposa marrom répida
+salta sobre 0 C50 preguieoso.
+
+
+15:50:21.924 [main] INFO  net.sourceforge.tess4j.TesseractTest - createDocuments for multiple images
+15:50:22.931 [main] INFO  net.sourceforge.tess4j.TesseractTest - doOCR on a PNG image with UNLV zone file .uzn
+15:50:23.121 [main] INFO  net.sourceforge.tess4j.TesseractTest - & duck/goose, as 12.5% of E-mail
+
+from aspammer@website.com is spam.
+
+The (quick) [brown] {fox} jumps!
+Over the $43,456.78 <lazy> #90 dog
+
+
+15:50:23.122 [main] INFO  net.sourceforge.tess4j.TesseractTest - getSegmentedRegions at given TessPageIteratorLevel
+15:50:23.134 [main] INFO  net.sourceforge.tess4j.TesseractTest - PageIteratorLevel: RIL_SYMBOL
+15:50:23.423 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[0]: x=105, y=66, w=25, h=29
+15:50:23.423 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[1]: x=136, y=66, w=19, h=30
+15:50:23.423 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[2]: x=161, y=75, w=17, h=22
+15:50:23.423 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[3]: x=205, y=68, w=11, h=36
+15:50:23.423 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[4]: x=222, y=75, w=19, h=31
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[5]: x=247, y=77, w=19, h=21
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[6]: x=273, y=67, w=8, h=30
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[7]: x=288, y=76, w=17, h=23
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[8]: x=310, y=68, w=19, h=30
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[9]: x=335, y=70, w=12, h=35
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[10]: x=376, y=69, w=10, h=38
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[11]: x=391, y=69, w=20, h=31
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[12]: x=416, y=78, w=15, h=21
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[13]: x=434, y=78, w=20, h=23
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[14]: x=459, y=79, w=28, h=22
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[15]: x=493, y=79, w=20, h=22
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[16]: x=518, y=71, w=10, h=38
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[17]: x=559, y=72, w=13, h=37
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[18]: x=580, y=71, w=18, h=31
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[19]: x=597, y=80, w=20, h=23
+15:50:23.424 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[20]: x=622, y=82, w=20, h=20
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[21]: x=650, y=73, w=13, h=37
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[22]: x=687, y=73, w=13, h=39
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[23]: x=706, y=83, w=21, h=22
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[24]: x=732, y=82, w=32, h=22
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[25]: x=768, y=83, w=21, h=30
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[26]: x=794, y=83, w=15, h=23
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[27]: x=817, y=74, w=6, h=32
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[28]: x=104, y=115, w=29, h=31
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[29]: x=137, y=125, w=20, h=21
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[30]: x=162, y=125, w=17, h=22
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[31]: x=185, y=125, w=14, h=21
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[32]: x=224, y=121, w=11, h=27
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[33]: x=241, y=117, w=20, h=30
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[34]: x=266, y=126, w=17, h=22
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[35]: x=310, y=117, w=18, h=34
+15:50:23.425 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[36]: x=334, y=119, w=19, h=29
+15:50:23.426 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[37]: x=360, y=119, w=16, h=30
+15:50:23.426 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[38]: x=385, y=145, w=7, h=10
+15:50:23.426 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[39]: x=399, y=120, w=19, h=29
+15:50:23.426 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[40]: x=425, y=120, w=17, h=30
+15:50:23.426 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[41]: x=449, y=121, w=19, h=29
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[42]: x=476, y=146, w=5, h=5
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[43]: x=490, y=121, w=18, h=29
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[44]: x=515, y=121, w=18, h=30
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[45]: x=561, y=126, w=22, h=21
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[46]: x=589, y=121, w=9, h=31
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[47]: x=604, y=130, w=18, h=23
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[48]: x=627, y=132, w=18, h=21
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[49]: x=649, y=132, w=19, h=30
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[50]: x=673, y=127, w=23, h=21
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[51]: x=722, y=123, w=20, h=31
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[52]: x=748, y=124, w=18, h=30
+15:50:23.430 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[53]: x=772, y=125, w=19, h=29
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[54]: x=818, y=125, w=20, h=31
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[55]: x=843, y=134, w=19, h=22
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[56]: x=867, y=134, w=20, h=31
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[57]: x=103, y=165, w=31, h=31
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[58]: x=160, y=166, w=20, h=31
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[59]: x=186, y=176, w=19, h=21
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[60]: x=210, y=175, w=17, h=23
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[61]: x=232, y=167, w=20, h=30
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[62]: x=257, y=167, w=12, h=31
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[63]: x=273, y=176, w=20, h=30
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[64]: x=298, y=176, w=20, h=23
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[65]: x=322, y=177, w=20, h=22
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[66]: x=347, y=177, w=14, h=22
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[67]: x=366, y=177, w=17, h=23
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[68]: x=389, y=195, w=7, h=10
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[69]: x=424, y=178, w=18, h=23
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[70]: x=448, y=178, w=15, h=23
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[71]: x=493, y=171, w=11, h=30
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[72]: x=514, y=171, w=18, h=30
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[73]: x=540, y=197, w=5, h=5
+15:50:23.431 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[74]: x=554, y=172, w=18, h=29
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[75]: x=578, y=171, w=36, h=32
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[76]: x=638, y=181, w=20, h=23
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[77]: x=662, y=172, w=18, h=31
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[78]: x=700, y=174, w=25, h=30
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[79]: x=731, y=190, w=13, h=6
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[80]: x=749, y=182, w=32, h=23
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[81]: x=785, y=183, w=18, h=23
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[82]: x=809, y=174, w=10, h=31
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[83]: x=825, y=174, w=10, h=31
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[84]: x=103, y=215, w=17, h=30
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[85]: x=121, y=224, w=14, h=21
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[86]: x=138, y=224, w=20, h=23
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[87]: x=164, y=225, w=30, h=21
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[88]: x=220, y=225, w=18, h=23
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[89]: x=244, y=226, w=15, h=22
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[90]: x=263, y=226, w=21, h=30
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[91]: x=288, y=226, w=18, h=23
+15:50:23.432 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[92]: x=312, y=227, w=32, h=21
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[93]: x=349, y=227, w=32, h=22
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[94]: x=385, y=228, w=18, h=22
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[95]: x=408, y=228, w=15, h=21
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[96]: x=427, y=219, w=37, h=41
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[97]: x=469, y=230, w=29, h=21
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[98]: x=502, y=229, w=18, h=23
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[99]: x=524, y=221, w=20, h=31
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[100]: x=549, y=230, w=15, h=22
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[101]: x=569, y=221, w=10, h=31
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[102]: x=585, y=226, w=11, h=27
+15:50:23.531 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[103]: x=600, y=230, w=18, h=23
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[104]: x=625, y=248, w=5, h=5
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[105]: x=637, y=231, w=18, h=23
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[106]: x=659, y=231, w=20, h=23
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[107]: x=684, y=232, w=32, h=22
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[108]: x=742, y=223, w=10, h=31
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[109]: x=758, y=233, w=15, h=22
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[110]: x=799, y=233, w=15, h=23
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[111]: x=818, y=233, w=21, h=31
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[112]: x=843, y=234, w=19, h=23
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[113]: x=867, y=234, w=32, h=22
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[114]: x=905, y=252, w=6, h=5
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[115]: x=102, y=266, w=28, h=29
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[116]: x=136, y=274, w=17, h=23
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[117]: x=159, y=275, w=14, h=21
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[118]: x=198, y=292, w=7, h=10
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[119]: x=207, y=292, w=7, h=10
+15:50:23.532 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[120]: x=221, y=275, w=14, h=23
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[121]: x=240, y=276, w=17, h=22
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[122]: x=263, y=267, w=20, h=31
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[123]: x=289, y=276, w=20, h=22
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[124]: x=314, y=277, w=17, h=22
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[125]: x=337, y=268, w=9, h=30
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[126]: x=353, y=268, w=9, h=31
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[127]: x=368, y=277, w=17, h=23
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[128]: x=390, y=269, w=7, h=10
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[129]: x=399, y=269, w=7, h=10
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[130]: x=433, y=269, w=20, h=32
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[131]: x=459, y=279, w=14, h=21
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[132]: x=477, y=279, w=18, h=22
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[133]: x=500, y=280, w=20, h=22
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[134]: x=526, y=279, w=20, h=22
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[135]: x=551, y=280, w=17, h=22
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[136]: x=594, y=272, w=23, h=30
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[137]: x=621, y=282, w=20, h=21
+15:50:23.533 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[138]: x=646, y=281, w=17, h=23
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[139]: x=669, y=273, w=20, h=30
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[140]: x=694, y=282, w=15, h=22
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[141]: x=735, y=282, w=15, h=23
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[142]: x=754, y=283, w=21, h=30
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[143]: x=780, y=283, w=15, h=22
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[144]: x=799, y=274, w=10, h=31
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[145]: x=815, y=283, w=21, h=22
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[146]: x=840, y=284, w=21, h=30
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[147]: x=866, y=280, w=11, h=27
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[148]: x=102, y=318, w=19, h=28
+15:50:23.534 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[149]: x=126, y=315, w=19, h=31
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[150]: x=150, y=324, w=17, h=23
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[151]: x=173, y=325, w=14, h=21
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[152]: x=212, y=317, w=20, h=31
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[153]: x=237, y=326, w=17, h=22
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[154]: x=260, y=326, w=20, h=21
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[155]: x=306, y=318, w=17, h=30
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[156]: x=323, y=327, w=18, h=22
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[157]: x=346, y=328, w=20, h=21
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[158]: x=372, y=319, w=9, h=30
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[159]: x=387, y=328, w=17, h=22
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[160]: x=410, y=328, w=20, h=22
+15:50:23.535 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[161]: x=456, y=320, w=29, h=30
+15:50:23.536 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[162]: x=489, y=330, w=20, h=21
+15:50:23.536 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[163]: x=515, y=329, w=21, h=22
+15:50:23.536 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[164]: x=540, y=321, w=20, h=31
+15:50:23.536 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[165]: x=567, y=347, w=5, h=5
+15:50:23.536 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[166]: x=601, y=322, w=24, h=30
+15:50:23.536 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[167]: x=630, y=331, w=18, h=23
+15:50:23.536 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[168]: x=674, y=331, w=15, h=22
+15:50:23.634 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[169]: x=692, y=332, w=18, h=22
+15:50:23.634 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[170]: x=715, y=332, w=21, h=22
+15:50:23.634 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[171]: x=740, y=332, w=19, h=23
+15:50:23.634 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[172]: x=764, y=333, w=15, h=21
+15:50:23.634 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[173]: x=782, y=324, w=21, h=32
+15:50:23.634 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[174]: x=827, y=325, w=21, h=31
+15:50:23.634 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[175]: x=853, y=334, w=15, h=22
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[176]: x=871, y=335, w=21, h=22
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[177]: x=897, y=334, w=21, h=22
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[178]: x=101, y=375, w=9, h=19
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[179]: x=110, y=375, w=9, h=19
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[180]: x=127, y=374, w=14, h=22
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[181]: x=144, y=374, w=18, h=23
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[182]: x=167, y=375, w=21, h=30
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[183]: x=194, y=366, w=8, h=31
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[184]: x=208, y=367, w=20, h=31
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[185]: x=233, y=376, w=18, h=22
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[186]: x=256, y=377, w=9, h=19
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[187]: x=265, y=377, w=9, h=19
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[188]: x=302, y=376, w=15, h=23
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[189]: x=321, y=377, w=18, h=22
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[190]: x=345, y=378, w=19, h=22
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[191]: x=370, y=373, w=10, h=27
+15:50:23.635 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[192]: x=385, y=378, w=18, h=22
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[193]: x=428, y=378, w=21, h=31
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[194]: x=453, y=378, w=18, h=23
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[195]: x=477, y=379, w=15, h=21
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[196]: x=496, y=387, w=13, h=6
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[197]: x=513, y=371, w=21, h=31
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[198]: x=538, y=380, w=18, h=22
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[199]: x=561, y=380, w=15, h=23
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[200]: x=581, y=380, w=15, h=23
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[201]: x=600, y=381, w=21, h=22
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[202]: x=626, y=381, w=15, h=23
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[203]: x=667, y=372, w=10, h=31
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[204]: x=682, y=381, w=18, h=23
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[205]: x=725, y=382, w=18, h=23
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[206]: x=748, y=374, w=21, h=30
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[207]: x=774, y=374, w=10, h=31
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[208]: x=789, y=383, w=18, h=23
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[209]: x=812, y=383, w=21, h=22
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[210]: x=100, y=424, w=20, h=30
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[211]: x=125, y=424, w=18, h=22
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[212]: x=149, y=425, w=14, h=21
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[213]: x=167, y=425, w=17, h=22
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[214]: x=190, y=425, w=14, h=22
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[215]: x=210, y=425, w=14, h=23
+15:50:23.636 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[216]: x=229, y=426, w=17, h=22
+15:50:23.637 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[217]: x=251, y=427, w=20, h=21
+15:50:23.637 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[218]: x=276, y=427, w=20, h=21
+15:50:23.637 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[219]: x=303, y=444, w=5, h=5
+15:50:23.637 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[220]: x=337, y=419, w=24, h=30
+15:50:23.637 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[221]: x=366, y=427, w=18, h=23
+15:50:23.637 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[222]: x=409, y=429, w=20, h=21
+15:50:23.735 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[223]: x=434, y=428, w=19, h=23
+15:50:23.735 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[224]: x=459, y=420, w=9, h=30
+15:50:23.735 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[225]: x=473, y=429, w=21, h=30
+15:50:23.736 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[226]: x=499, y=429, w=17, h=23
+15:50:23.736 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[227]: x=543, y=430, w=31, h=22
+15:50:23.736 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[228]: x=579, y=430, w=18, h=23
+15:50:23.736 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[229]: x=602, y=431, w=15, h=21
+15:50:23.736 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[230]: x=621, y=431, w=15, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[231]: x=639, y=431, w=20, h=23
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[232]: x=664, y=431, w=21, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[233]: x=690, y=432, w=17, h=23
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[234]: x=733, y=432, w=15, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[235]: x=751, y=432, w=19, h=23
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[236]: x=774, y=433, w=21, h=31
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[237]: x=800, y=424, w=10, h=31
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[238]: x=815, y=425, w=22, h=31
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[239]: x=840, y=434, w=19, h=23
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[240]: x=100, y=474, w=14, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[241]: x=119, y=474, w=18, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[242]: x=143, y=466, w=9, h=30
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[243]: x=159, y=470, w=10, h=27
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[244]: x=174, y=475, w=18, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[245]: x=219, y=475, w=14, h=23
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[246]: x=238, y=476, w=19, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[247]: x=262, y=476, w=20, h=31
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[248]: x=288, y=477, w=14, h=21
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[249]: x=306, y=477, w=18, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[250]: x=351, y=468, w=9, h=31
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[251]: x=367, y=468, w=9, h=31
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[252]: x=403, y=478, w=17, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[253]: x=425, y=478, w=18, h=23
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[254]: x=449, y=478, w=20, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[255]: x=474, y=479, w=17, h=22
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[256]: x=517, y=479, w=21, h=31
+15:50:23.737 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[257]: x=543, y=471, w=10, h=30
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[258]: x=558, y=480, w=21, h=31
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[259]: x=584, y=480, w=15, h=22
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[260]: x=602, y=480, w=20, h=23
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[261]: x=628, y=498, w=5, h=5
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[262]: x=662, y=473, w=25, h=30
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[263]: x=693, y=473, w=10, h=31
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[264]: x=729, y=483, w=19, h=21
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[265]: x=752, y=482, w=20, h=23
+15:50:23.738 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[266]: x=776, y=483, w=16, h=22
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[267]: x=795, y=483, w=16, h=22
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[268]: x=814, y=483, w=20, h=23
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[269]: x=99, y=524, w=31, h=22
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[270]: x=135, y=524, w=18, h=23
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[271]: x=159, y=525, w=15, h=21
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[272]: x=178, y=525, w=15, h=21
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[273]: x=196, y=516, w=20, h=32
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[274]: x=221, y=526, w=21, h=21
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[275]: x=268, y=526, w=15, h=22
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[276]: x=286, y=517, w=18, h=32
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[277]: x=309, y=527, w=21, h=30
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[278]: x=335, y=518, w=10, h=31
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[279]: x=350, y=519, w=21, h=31
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[280]: x=375, y=527, w=20, h=23
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[281]: x=421, y=528, w=15, h=23
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[282]: x=440, y=528, w=19, h=23
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[283]: x=464, y=520, w=10, h=30
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[284]: x=479, y=524, w=11, h=27
+15:50:23.836 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[285]: x=495, y=529, w=18, h=23
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[286]: x=540, y=530, w=15, h=22
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[287]: x=559, y=530, w=20, h=23
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[288]: x=582, y=521, w=21, h=32
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[289]: x=608, y=531, w=15, h=21
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[290]: x=626, y=531, w=18, h=23
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[291]: x=669, y=531, w=18, h=23
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[292]: x=692, y=523, w=10, h=31
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[293]: x=728, y=532, w=21, h=31
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[294]: x=753, y=533, w=18, h=22
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[295]: x=776, y=533, w=15, h=22
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[296]: x=795, y=533, w=15, h=22
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[297]: x=813, y=533, w=20, h=23
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[298]: x=98, y=574, w=20, h=30
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[299]: x=123, y=574, w=17, h=23
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[300]: x=146, y=575, w=14, h=21
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[301]: x=164, y=575, w=17, h=22
+15:50:23.837 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[302]: x=186, y=576, w=18, h=21
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[303]: x=209, y=575, w=19, h=23
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[304]: x=233, y=576, w=15, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[305]: x=253, y=576, w=19, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[306]: x=279, y=593, w=5, h=5
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[307]: x=313, y=568, w=29, h=30
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[308]: x=369, y=578, w=14, h=21
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[309]: x=387, y=578, w=18, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[310]: x=409, y=578, w=21, h=31
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[311]: x=435, y=578, w=19, h=23
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[312]: x=459, y=579, w=15, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[313]: x=478, y=579, w=19, h=23
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[314]: x=523, y=579, w=32, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[315]: x=560, y=580, w=18, h=23
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[316]: x=583, y=580, w=15, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[317]: x=602, y=581, w=15, h=21
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[318]: x=621, y=581, w=19, h=23
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[319]: x=645, y=581, w=32, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[320]: x=703, y=582, w=15, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[321]: x=721, y=573, w=19, h=32
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[322]: x=744, y=582, w=21, h=31
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[323]: x=770, y=574, w=10, h=31
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[324]: x=785, y=574, w=21, h=32
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[325]: x=810, y=583, w=19, h=23
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[326]: x=98, y=624, w=14, h=22
+15:50:23.838 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[327]: x=117, y=624, w=18, h=22
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[328]: x=141, y=616, w=9, h=30
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[329]: x=157, y=620, w=10, h=27
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[330]: x=172, y=625, w=18, h=22
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[331]: x=217, y=625, w=14, h=23
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[332]: x=236, y=626, w=19, h=22
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[333]: x=259, y=617, w=20, h=31
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[334]: x=285, y=626, w=14, h=22
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[335]: x=303, y=627, w=17, h=22
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[336]: x=346, y=627, w=20, h=23
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[337]: x=391, y=628, w=17, h=22
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[338]: x=413, y=621, w=18, h=30
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[339]: x=436, y=628, w=20, h=23
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[340]: x=481, y=629, w=21, h=31
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[341]: x=507, y=629, w=15, h=22
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[342]: x=525, y=629, w=18, h=23
+15:50:23.839 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[343]: x=547, y=630, w=21, h=31
+15:50:23.938 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[344]: x=572, y=631, w=21, h=22
+15:50:23.938 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[345]: x=598, y=621, w=10, h=31
+15:50:23.938 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[346]: x=613, y=631, w=18, h=29
+15:50:23.938 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[347]: x=635, y=631, w=20, h=23
+15:50:23.938 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[348]: x=660, y=631, w=15, h=23
+15:50:23.938 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[349]: x=679, y=631, w=20, h=23
+15:50:23.938 [main] INFO  net.sourceforge.tess4j.TesseractTest - Box[350]: x=705, y=649, w=5, h=5
+15:50:23.939 [main] INFO  net.sourceforge.tess4j.TesseractTest - doOCR on a PDF document
+15:50:24.522 [main] INFO  net.sourceforge.tess4j.TesseractTest - The (quick) [brown] {fox} jumps!
+Over the $43,456.78 <lazy> #90 dog
+& duck/goose, as 12.5% of E-mail
+from aspammer@website.com is spam.
+Der ,,schnelle” braune Fuchs springt
+?ber den faulen Hund. Le renard brun
+«rapide» saute par-dessus le chien
+paresseux. La volpe marrone rapida
+salta sopra i] cane pigro. El zorro
+marrén répido salta sobre el perro
+perezoso. A raposa marrom répida
+salta sobre 0 C50 preguieoso.
+
+
+15:50:24.523 [main] INFO  net.sourceforge.tess4j.TesseractTest - doOCR on a PNG image
+15:50:25.036 [main] INFO  net.sourceforge.tess4j.TesseractTest - The (quick) [brown] {fox} jumps!
+Over the $43,456.78 <lazy> #90 dog
+& duck/goose, as 12.5% of E-mail
+from aspammer@website.com is spam.
+Der ,,schnelle” braune Fuchs springt
+?ber den faulen Hund. Le renard brun
+«rapide» saute par-dessus le chien
+paresseux. La volpe marrone rapida
+salta sopra i] cane pigro. El zorro
+marrén répido salta sobre el perro
+perezoso. A raposa marrom répida
+salta sobre 0 C50 preguieoso.
+
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
