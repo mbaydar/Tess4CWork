@@ -56,6 +56,8 @@ public class Testt {
 		closeWindow();
 		sleep(1000);
 		skip();
+		sleep(1000);
+		skip();
 	}
 	
 	public static void clickESC() throws AWTException{
