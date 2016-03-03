@@ -4,6 +4,7 @@ import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -27,14 +28,20 @@ import net.sourceforge.tess4j.TesseractException;
 public class Testt {
 
 	static int sayac = 0;
+	static int counter = 0;
+	static String lastResult = "";
 	static String safeWords[] = { "sozluk", "haber", "oyun", "sczluk", "bilisim", "dizi", "yemek", "mp3", "sanayi",
 			"hastane", "tvizle", "sepet", "gazete", "qazete", "bi|isim", "firma", "sarki", "soz|uk", "filmizle",
 			"fi|mizle", "diziizle", "yatirim", "youtube", "qov,tr", "emlak", "qov.tr", "kitap", "sinav" };
 
 	public static void main(String[] args) throws HeadlessException, AWTException, IOException {
 
-		for (int i = 0; i < 50; i++) {
-			dosmth();
+		for (int i = 0; i < 300; i++) {
+			if (checkAnomaly()) {
+				dosmth();
+			} else {
+				closeWindowAndSkip();
+			}
 			try {
 				Thread.sleep(3000); // 1000 milliseconds is one second.
 			} catch (InterruptedException ex) {
@@ -42,6 +49,66 @@ public class Testt {
 			}
 		}
 
+	}
+
+	public static void closeWindowAndSkip() throws AWTException {
+		mouseMove(583, 73);
+		closeWindow();
+		sleep(1000);
+		skip();
+	}
+	
+	public static void clickESC() throws AWTException{
+		mouseMove(712, 79);
+		doESC();
+	}
+	
+	public static void doESC(){
+		try {
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ESCAPE);
+			robot.keyRelease(KeyEvent.VK_ESCAPE);
+
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void closeWindow() {
+		try {
+			Robot robot = new Robot();
+			// Simulate a key press
+			robot.keyPress(KeyEvent.VK_ALT);
+			robot.keyPress(KeyEvent.VK_F4);
+			robot.keyRelease(KeyEvent.VK_ALT);
+			robot.keyRelease(KeyEvent.VK_F4);
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static boolean checkAnomaly() throws IOException, HeadlessException, AWTException {
+		BufferedImage image = new Robot()
+				.createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
+
+		BufferedImage croppedImage = image.getSubimage(192, 134, 164, 21);
+
+		ImageIO.write(croppedImage, "png", new File("check.png"));
+
+		File imageFile = new File("check.png");
+		ITesseract instance = new Tesseract();
+		String result = null;
+		try {
+			result = instance.doOCR(imageFile);
+//			System.out.println(result);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		if (result.contains("https://prod.uh")) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public static void dosmth() throws HeadlessException, AWTException, IOException {
@@ -98,6 +165,16 @@ public class Testt {
 			e.printStackTrace();
 		}
 
+		if (lastResult.equals(res)) {
+			counter++;
+			if (counter == 5) {
+				clickESC();
+			}
+		} else {
+			lastResult = res;
+			counter = 0;
+		}
+
 		Integer val = sites.get(res);
 		if (val != null) {
 			sayac++;
@@ -124,7 +201,7 @@ public class Testt {
 			// } catch (IOException e) {
 			// // exception handling left as an exercise for the reader
 			// }
-			System.out.println(res);
+//			System.out.println(res);
 			checkThenSkip(res);
 			// skip();
 		}
@@ -149,6 +226,7 @@ public class Testt {
 			}
 			chooseOne(1);
 		} else {
+			System.out.println(res);
 			skip();
 		}
 	}
